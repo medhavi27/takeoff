@@ -123,7 +123,7 @@ class Session:
         if machine.get_balance() == 0 or amount % 20 != 0:
             return "Unable to process your withdrawal at this time."
         if user.balance < amount:
-            user.set_overdrawn()
+            user.set_overdrawn(True)
             if machine.get_balance() < amount:
                 amount = machine.get_balance()
                 bal = user.balance - amount - 5
@@ -170,7 +170,9 @@ class Session:
         self.last_func_time = time.time()
         if not self.current_user:
             return "Authorization required"
-
+        curr_bal = user.balance
+        if amount+curr_bal>0:
+            user.set_overdrawn(False)
         bal = user.balance + amount
         user.balance = bal
         machine.set_balance(machine.get_balance() + amount)
