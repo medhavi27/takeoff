@@ -2,8 +2,6 @@ Notes on the functionality:
 
 I was able to implement everything and write tests, but encountered some issues, so please read these notes before proceeding:
 
-1. ***Very Important*** Python3 does not accept leading zeros in a number, and the dataset contained a pin 0075.
-Therefore, for the program to work correctly you MUST enter the pin as a string. It's a bit inefficient, but it's what I had to do.
 
 2. VALIDATION: If you enter an incorrect user ID or pin- the program ends and you have to start again.
 If you enter an invalid input (number not in the options)  on the actions menu once you are logged in, the program handles that and asks for a different input. 
