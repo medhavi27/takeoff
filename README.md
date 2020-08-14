@@ -1,6 +1,6 @@
 Notes on the functionality:
 
-I was able to implement everything and write tests, but encountered some issues, so please read these notes before proceeding:
+Please read these notes before running the program:
 
 
 1. VALIDATION: 
