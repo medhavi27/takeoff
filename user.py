@@ -20,10 +20,10 @@ class User:
         """
         return self.overdrawn
 
-    def set_overdrawn(self):
+    def set_overdrawn(self, val):
         """
         setter function for a user's overdraft history
         """
-        self.overdrawn = True
+        self.overdrawn = val
 
 
