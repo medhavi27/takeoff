@@ -2,7 +2,8 @@ Notes on the functionality:
 
 I was able to implement everything and write tests, but encountered some issues, so please read these notes before proceeding:
 
-1. ***Very Important*** Python3 does not accept leading zeros in a number, and the dataset contained a pin 0075.
+1. ***Very Important*** 
+Python3 does not accept leading zeros in a number, and the dataset contained a pin 0075.
 Therefore, for the program to work correctly you MUST enter the pin as a string. It's a bit inefficient, but it's what I had to do.
 
 2. VALIDATION: 
@@ -14,7 +15,7 @@ Therefore, for the program to work correctly you MUST enter the pin as a string.
 
 - If you enter a bad (or negative) input for the amount to deposit or withdraw- the program does not accept it and sets the amount to 0
 
-- If, after completing an action, you are back on the actions menu and you enter a bad input, the program ends.
+- If, after completing an action, you are back on the actions menu and you enter a non-numeric, the program ends. If you enter a number not in the options it prompts you for a valid input
 
 
 3. The 2 minute timeout function: I was able to implement the automatic logout after 2 minutes, but the display in the terminal stays the same until you actually try to do something. So it won't show you "you have been logged out" and exit the terminal, but it will print "session timed out" and if you try to make a withdrawal or do anything else, it will return "authorization required", which is what the instructions said to do. 
