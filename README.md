@@ -34,4 +34,6 @@ Please read these notes before running the program:
 
 7. To run tests, navigate into the "takeoff" directory, and type in "python3 tests.py"
 
+8. I am not storing data between sessions- so the "get history" function, for example, only returns the user's history for this one session and the machine's balance on startup is always $10000
+
 
