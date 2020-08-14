@@ -24,7 +24,7 @@ def main():
     if input_var in session.dic:
         bal = session.dic[input_var][1]
         try:
-            pin = eval(input("Please enter your pin "))
+            pin = input("Please enter your pin ")
         except(SyntaxError, NameError, TypeError):
             print("Not a valid pin")
             pin = '0000'

@@ -5,7 +5,6 @@ import csv
 import time
 from datetime import datetime
 
-
 class Session:
     def __init__(self):
         self.current_user = None
@@ -13,6 +12,7 @@ class Session:
         self.last_func_time = None
         self.current_time=None
         self.dic = {}
+
 
     def set_current_time(self, time):
         """
