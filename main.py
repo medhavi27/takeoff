@@ -13,7 +13,6 @@ def main():
     machine.set_balance(10000)
     session = Session()
     Session.set_dict(session)
-    print((session.dic))
 
     input_var = None
     try:
