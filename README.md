@@ -6,10 +6,15 @@ I was able to implement everything and write tests, but encountered some issues,
 Therefore, for the program to work correctly you MUST enter the pin as a string. It's a bit inefficient, but it's what I had to do.
 
 2. VALIDATION: If you enter an incorrect user ID or pin- the program ends and you have to start again.
-If you enter an invalid input (number not in the options)  on the actions menu once you are logged in, the program handles that and asks for a different input. 
-If you enter a non-numeric input on the actions menu once you are logged in the program exits.
+
+If you enter an invalid input (number not in the options)  on the actions menu once you are logged in, the program handles that and asks for a different input.
+
+If you enter a non-numeric input on the actions menu once you are logged in the program exits. This might seem inefficient but it is an ATM, and those do not have non-numeric inputs 
+
 If you enter a bad (or negative) input for the amount to deposit or withdraw- the program does not accept it and sets the amount to 0
+
 If, after completing an action, you are back on the actions menu and you enter a bad input, the program ends.
+
 
 3. The 2 minute timeout function: I was able to implement the automatic logout after 2 minutes, but the display in the terminal stays the same until you actually try to do something. So it won't show you "you have been logged out" and exit the terminal, but it will print "session timed out" and if you try to make a withdrawal or do anything else, it will return "authorization required", which is what the instructions said to do. 
 
