@@ -54,9 +54,9 @@ class Session:
         return
 
     def timeout(self, user, time):
-        # input: a User object
+        # @param user: User 
         # calls the logout function there has been no activity for over 2 minutes
-        # rtype: none
+        # @return type: None
         self.set_current_time(time)
         if self.get_current_time() - self.last_func_time > 120:
             self.logout(user)
